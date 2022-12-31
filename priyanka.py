@@ -5,3 +5,4 @@ d = 6
 e =9
 f = 10
 var_a = 'a'
+string = "abc"

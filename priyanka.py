@@ -9,3 +9,5 @@ string = "abc"
 
 string_2 = "abcde"
 num = 123
+num2 = 456
+

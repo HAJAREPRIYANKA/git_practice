@@ -8,3 +8,7 @@ var_a = 'a'
 string = "abc"
 string_2 = "abcde"
 key=1
+
+
+
+lmn=1

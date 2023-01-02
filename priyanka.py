@@ -6,7 +6,6 @@ e =9
 f = 10
 var_a = 'a'
 string = "abc"
-
 string_2 = "abcde"
 num = 123
 num2 = 456

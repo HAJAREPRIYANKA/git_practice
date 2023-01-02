@@ -7,6 +7,6 @@ f = 10
 var_a = 'a'
 string = "abc"
 string_2 = "abcde"
-
-num = 1
-num2 = 2
+num = 123
+num2 = 456
+num3 = 678

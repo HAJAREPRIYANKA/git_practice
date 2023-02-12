@@ -17,3 +17,18 @@ rsync -rv . $TEMP_DIR/ --exclude=.git
 cd $TEMP_DIR
 zip -r $DIRECTORY_NAME.zip . -x '*.git*'
 echo " $DIRECTORY_NAME.zip Created at $TEMP_DIR/" 
+
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllObjectActions",
+            "Effect": "Allow",
+            "Action": "s3:putobject",
+            "Resource": [
+                "arn:aws:s3:::testing-cron-job/penny.zip"
+            ]
+        }
+    ]
+}

@@ -2,6 +2,9 @@ steps:
   - label: ":cloudformation: Deploy CloudFormation Stack"
     commands:
       - aws cloudformation deploy --template-file your-template.yaml --stack-name first-s3 --capabilities CAPABILITY_NAMED_IAM --region ap-southeast-2
-    plugins:
-      - docker#v3.7.0:
-          image: "amazon/aws-cli:latest"
+    branches: "dev"
+    agents:
+      queue: gamify
+    # plugins:
+    #   - docker#v3.7.0:
+    #       image: "amazon/aws-cli:latest"

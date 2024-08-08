@@ -4,7 +4,7 @@ steps:
       - aws cloudformation deploy --template-file your-template.yaml --stack-name first-s3-1 --capabilities CAPABILITY_NAMED_IAM --region ap-southeast-2
     branches: "dev"
     agents:
-      queue: gamify
+      queue: gamify-tabtrackside
     # plugins:
     #   - docker#v3.7.0:
     #       image: "amazon/aws-cli:latest"

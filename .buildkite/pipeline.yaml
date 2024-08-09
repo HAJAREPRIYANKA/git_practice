@@ -4,8 +4,8 @@ steps:
       - aws cloudformation deploy --template-file your-template.yaml --stack-name first-s31-1 --capabilities CAPABILITY_NAMED_IAM --region ap-southeast-2
     branches: "dev"
     agents:
-      queue: dev
-      type: deploy
+      queue: "prod"
+      # type: deploy
     # plugins:
     #   - docker#v3.7.0:
     #       image: "amazon/aws-cli:latest"

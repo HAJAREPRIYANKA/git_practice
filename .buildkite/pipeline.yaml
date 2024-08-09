@@ -5,6 +5,7 @@ steps:
     branches: "dev"
     agents:
       queue: dev
+      type: deploy
     # plugins:
     #   - docker#v3.7.0:
     #       image: "amazon/aws-cli:latest"

@@ -6,9 +6,10 @@ steps:
     command:
       - bash -x .buildkite/build.sh
     branches: "dev"
+    key: "build-step"
 
   - label: ":rocket: Trigger Deployment Pipeline"
     trigger: "pipeline-deploy"
     branches: "dev"
-    async: true
-
+    async: false
+    depends_on: "build-step"

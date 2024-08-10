@@ -9,7 +9,7 @@ steps:
     key: "build-step"
 
   - label: ":rocket: Trigger Deployment Pipeline"
-    trigger: "pipeline-deploy"
+    trigger: "node-app-dev-deploy"
     branches: "dev"
     async: false
     depends_on: "build-step"

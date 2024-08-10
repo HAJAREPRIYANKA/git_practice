@@ -10,5 +10,5 @@ steps:
   - label: ":rocket: Trigger Deployment Pipeline"
     trigger: "pipeline-deploy"
     branches: "dev"
-    async: false
+    async: true
 

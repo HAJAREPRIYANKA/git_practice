@@ -1,0 +1,6 @@
+- label: ":building_construction: Backend application for be.dev"
+    agents:
+      queue: dev
+      type: build
+    command: bash -x .buildkite/build.sh
+    branches: "dev"

@@ -1,0 +1,8 @@
+steps:
+  - label: ":whale: Run Docker Container"
+    agents:
+      queue: dev
+      type: build
+    command:
+      - docker run --rm -d --name my-container <your-docker-image>
+    branches: "dev"

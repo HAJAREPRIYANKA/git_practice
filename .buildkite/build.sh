@@ -1,3 +1,3 @@
 #!/bin/bash
-docker build -t node-app ..
+docker build -t node-app .
 

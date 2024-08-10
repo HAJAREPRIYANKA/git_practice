@@ -4,7 +4,6 @@ steps:
       queue: dev
       type: build
     command:
-      - sudo rm -rf /var/lib/buildkite-agent/builds/gamify-buildkite-agent/buildkite-test-3/test-pipeline-1
       - bash -x .buildkite/build.sh
     branches: "dev"
 

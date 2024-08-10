@@ -3,6 +3,5 @@ steps:
     agents:
       queue: dev
       type: build
-    command:
-      - docker run --rm -d --name my-container <your-docker-image>
+    command: docker run --rm -d --name my-container <your-docker-image>
     branches: "dev"

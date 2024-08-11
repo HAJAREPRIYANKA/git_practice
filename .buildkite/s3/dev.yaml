@@ -4,6 +4,6 @@ steps:
       queue: dev
       type: deploy
     command:
-      - "bash -x deploy.sh app-tier/ecs-cluster dev false nginx"
+      - "bash -x deploy.sh app-tier/s3 dev false nginx"
     branches: "dev"
 

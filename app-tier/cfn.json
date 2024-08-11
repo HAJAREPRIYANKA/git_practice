@@ -1,0 +1,34 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Description:
+  CloudFormation stack to create a S3 Bucket
+
+Parameters:
+  BucketName:
+    Type: String
+    Description: The name of the S3 bucket to create
+    # Default: bucket-name
+
+  ApplicationName:
+    Type: String
+    Description:  Define the app name
+    Default: test-bucket
+
+  EnvironmentName:
+    Default: dev
+    Description: Provide the environment where the stack needs to be deployed
+    Type: String
+  
+Resources:
+  NetopsBucket:
+    Type: "AWS::S3::Bucket"
+    Properties:
+      BucketName: !Sub "${BucketName}-${ApplicationName}-${EnvironmentName}"
+      AccessControl: Private
+      Tags: 
+        - Key: Name
+          Value: !Sub "${EnvironmentName}-${ApplicationName}-S3Bucket"
+        - Key: Environment
+          Value: !Ref EnvironmentName
+        - Key: ApplicationName
+          Value: !Ref ApplicationName

@@ -1,0 +1,14 @@
+[
+    {
+      "ParameterKey": "EnvironmentName",
+      "ParameterValue": "dev"
+    },
+    {
+      "ParameterKey": "ApplicationName",
+      "ParameterValue": "test-app"
+    },
+    {
+        "ParameterKey": "BucketName",
+        "ParameterValue": "test-s3"
+      }
+]

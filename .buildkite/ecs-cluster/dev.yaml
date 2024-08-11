@@ -1,1 +1,9 @@
+steps:
+  - label: "deploy ecs cluster"
+    agents:
+      queue: dev
+      type: deploy
+    command:
+      - "./deploy.sh app-tier dev false nginx"
+    branches: "dev"
 
